@@ -74,15 +74,13 @@ int first_Insert()
 
 int first_delete()
 {
-    int val;
-    if (f==r)
+    if (f<0)
     {
         printf("queue is empty...\n");
     } 
-    else if(f<0)
+    else if (f==r)
     {
         f=r=-1;
-        a[f]=val;
     }
     else
     {
